@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile local storage demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.css"/>
+    <link rel="stylesheet" href="css/ls-test.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0b3/jquery.mobile-1.0b3.min.js"></script>
+    <script type="text/javascript" src="http://www.modernizr.com/downloads/modernizr-latest.js"></script>
+    <script type="text/javascript" src="javascript/ls-test.js"></script>
+</head>
+<body>
+<section data-role="page" id="storageDemoPage">
+    <section data-role="header">
+        <h2>jQuery Mobile local storage demo</h2>
+    </section>
+    <section data-role="content">
+        <p id="message"/>
+        <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">Enter text to store</li>
+            <li>
+                <input type="text" id="entry" name="entry" placeholder="Enter text to store"/>
+		<div class="ui-grid-a">
+                  <div class="ui-block-a"><input data-theme="c" data-icon="delete" type="button" id="deleteStorage" value="Delete" /></div>
+                  <div class="ui-block-b"><input data-theme="b" data-icon="check" type="button" id="addToStorage" value="Save"/></div>
+		</div>
+            </li>
+            <li data-role="list-divider">Item in store</li>
+            <li class="storeItem"/>
+        </ul>
+    </section>
+</section>
+</body>
+</html>
